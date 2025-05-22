@@ -1,0 +1,47 @@
+.windmap-open-content {
+  position: relative; 
+  height: 500px; 
+  overflow: hidden;
+}
+
+.windmap-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 50px;
+  height: 100%;
+}
+
+.windmap-text {
+  flex: 0 0 250px;
+  color: white;
+  font-size: 1.1rem;
+  z-index: 2;
+}
+
+.windmap-images {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  height: 100%;
+}
+.windmap-logo {
+  width: 30%;
+  height: auto;
+  z-index: 2;
+  margin-bottom: 40px;
+}
+
+
+/* Image collée en bas ET centrée */
+.fixed-bottom {
+  width: 45%;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  padding: 0;
+}

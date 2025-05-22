@@ -1,0 +1,109 @@
+/* Style global du body */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between; /* Sépare le titre et le lien */
+  align-items: center;
+  padding: 20px 30px; /* Un peu d'espace autour */
+}
+
+/* Titre */
+header h1 {
+  margin: 0;
+  font-size: 60px !important; /* ou 2.5rem */
+}
+
+/* Navigation */
+nav {
+  text-align: right;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+a {
+  text-decoration: none;
+  color: #000000 !important;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.nav-about-link {
+  font-size: 20px;
+}
+
+.content {
+  padding-bottom: 0;
+}
+
+.projects {
+  width: 100%;
+  padding: 0;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin: 170px 0 0 0; /* 40px de marge en haut */
+}
+
+
+.project {
+  width: 100%;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+}
+
+
+.project-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px 20px; /* réduit ici */
+  min-height: 60px;   /* facultatif : fixe une hauteur minimale */
+}
+
+
+.project-title h3 {
+  margin: 0;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.arrow {
+  display: none;
+}
+
+
+.project-details {
+  margin-top: 15px;
+  font-size: 1em;
+  line-height: 1.5;
+  color: white;
+}
+
+header.hide-title h1 {
+  display: none;
+}
+

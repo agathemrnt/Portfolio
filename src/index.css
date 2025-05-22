@@ -1,0 +1,13 @@
+/* Réinitialisation du centrage */
+body {
+  margin: 0;
+  font-family: 'Space Grotesk', sans-serif !important;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #ffffff;
+  color: #213547;
+  display: block; /* Retirer le flex */
+  text-align: left; /* S'assurer que le texte est aligné à gauche */
+}
+
+

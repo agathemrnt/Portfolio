@@ -1,47 +1,44 @@
-.windmap-open-content {
-  position: relative; 
-  height: 500px; 
-  overflow: hidden;
+/* Padding standard du projet */
+.project {
+  padding: 20px 20px;
+  /* ... autres styles */
 }
 
-.windmap-content {
-  display: flex;
-  justify-content: space-between;
-  padding: 0px 50px;
-  height: 100%;
+/* Quand le projet est ouvert, on enlève uniquement le padding bottom */
+.project.open {
+  padding-bottom: 0;
 }
 
-.windmap-text {
-  flex: 0 0 250px;
-  color: white;
-  font-size: 1.1rem;
-  z-index: 2;
+.custom-link {
+  color: white !important;
+  font-weight: normal !important;
+  text-decoration: underline;
 }
 
-.windmap-images {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex: 1;
-  height: 100%;
-}
 .windmap-logo {
-  width: 30%;
+  width: 100%;
+  max-width: 200px;
   height: auto;
+  margin-bottom: 30px;
   z-index: 2;
-  margin-bottom: 40px;
 }
 
+@media (max-width: 576px) {
+  .windmap-logo {
+    margin-bottom: 0;
+  }
+}
 
-/* Image collée en bas ET centrée */
-.fixed-bottom {
-  width: 45%;
+.windmap-main {
+  width: 50%;
+  max-width: 30vw;
+  min-width: 250px; /* ✅ taille minimale raisonnable */
   height: auto;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  margin: 0;
-  padding: 0;
+}
+
+/* Sur petits écrans : on adapte le max-width */
+@media (max-width: 768px) {
+  .windmap-main {
+    max-width: 90vw; /* ✅ plus large sur mobile */
+  }
 }

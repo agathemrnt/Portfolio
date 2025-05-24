@@ -1,49 +1,5 @@
-.bookmate-content {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  padding: 30px 50px;
-  flex-wrap: wrap;
-}
-
-/* Colonne d'infos */
-.bookmate-info {
-  flex: 1;
-  max-width: 250px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  color: #ffffff;
-}
-
-.bookmate-logo {
-  width: 100%;
-  height: auto;
-}
-
-.bookmate-year {
-  font-weight: bold;
-  font-size: 1.6rem;
-  margin: 0;
-}
-
-.bookmate-description {
-  font-size: 1.1rem;
-  line-height: 1.4;
-  margin: 0;
-}
-
-/* Colonnes d’images */
-.bookmate-column {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-}
-
-.bookmate-image {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-  object-fit: contain;
+.custom-link {
+  color: white !important;
+  text-decoration: underline;
+  font-weight: bold !important;
 }

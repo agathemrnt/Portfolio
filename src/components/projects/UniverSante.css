@@ -1,41 +1,7 @@
-.project-title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
-  padding: 20px;
-}
 
-.project-title h3 {
-  margin: 0;
-  font-size: 1.5em;
-  font-weight: bold;
-  color: white;
-}
-
-.universante-content {
-  display: flex;
-  justify-content: space-around; /* <-- espace égal des deux côtés */
-  align-items: flex-start;
-  gap: 30px;
-  padding: 30px;
-  flex-wrap: wrap;
-}
-
-.universante-text {
-  flex: 1;
-  color: white;
-  font-size: 1.1rem;
-}
-
-.universante-image {
-  flex: 1;
-  text-align: right;
-}
-
-.universante-image img {
-  max-width: 60%;
-  height: auto;
-  border-radius: 15px;
-  margin-right: 15vw;
+@media (max-width: 768px) {
+  .universante-img {
+    left: 0;
+    max-width: 60%; /* plus petit sur mobile */
+  }
 }
